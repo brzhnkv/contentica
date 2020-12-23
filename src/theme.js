@@ -23,7 +23,17 @@ const theme = createMuiTheme({
     },
   },
   typography: {
-    fontFamily: "'TRY Vesterbro', sans-serif",
+    fontFamily: "TRY Vesterbro",
+    fontWeightLight: 300,
+    fontWeightRegular: 500,
+    fontWeightMedium: 600,
+    fontWeightBold: 400,
+    h3: {
+      fontWeight: 400,
+    },
+    h5: {
+      fontWeight: 800,
+    },
   },
 });
 

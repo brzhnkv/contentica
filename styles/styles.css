@@ -16,7 +16,7 @@ body {
   src: url("/fonts/TRYVesterbro-Bold.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -24,7 +24,7 @@ body {
   src: url("/fonts/TRYVesterbro-Extrabold.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -32,7 +32,7 @@ body {
   src: url("/fonts/TRYVesterbro-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -40,7 +40,7 @@ body {
   src: url("/fonts/TRYVesterbro-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -48,7 +48,7 @@ body {
   src: url("/fonts/TRYVesterbro-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -56,5 +56,5 @@ body {
   src: url("/fonts/TRYVesterbro-Poster.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }

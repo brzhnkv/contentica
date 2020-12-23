@@ -86,7 +86,6 @@ const Advantages = (props) => {
             Мы молодая, амбициозная команда профессионально обученная на
             продвижение бизнеса в социальных сетях
           </Typography>
-          <Typography>Мы охуенные.</Typography>
         </Grid>
         <Grid item xs={6}></Grid>
       </Grid>

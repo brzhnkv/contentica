@@ -27,63 +27,27 @@ const useStyles = makeStyles((theme) => ({
     height: 70,
     fontSize: 20,
     marginTop: 80,
-    outline: "none",
-    /*  position: "relative",
-    display: "inline-block", */
-    /*  verticalAlign: "middle",
-    touchAction: "manipulation",
-    userSelect: "none", */
+    verticalAlign: "middle",
+    userSelect: "none",
     cursor: "pointer",
     whiteSpace: "nowrap",
     textDecoration: "none",
-    textAlign: "center",
+    outline: "none",
     border: "0",
-    textTransform: "uppercase",
-    letterSpacing: "4px",
-
-    fontSize: "24px",
-    color: "#fff",
     boxShadow: "0 3px 14px #000",
-
-    // backgroundImage: "linear-gradient(90deg, #da3287, #ffde5e)",
     backgroundImage:
       "linear-gradient(54.7deg, #960ead, #0ad8c7, #960ead, #0ad8c7)",
-    //backgroundImage: "linear-gradient(90deg, #da3287, #ffde5e, #da3287, #ffde5e)",
     backgroundSize: "300% 100%",
     animation: "$gradient 2.5s infinite linear",
-    //  background: "linear-gradient(54.7deg, #0ad8c7 12%,#960ead 100%)",
-    //animation: "$gradient 5s infinite",
-    /* animationDuration: "3s",
-    animationTimingFunction: "linear",
-    animationIterationCount: "infinite", */
-
-    /*  "&:hover, &:active": {
-      color: "#fff",
-      boxShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
-    },
-    "&:before": {
-      content: "''",
-      position: "absolute",
-      top: 0,
-      bottom: 0,
-      right: 0,
-      left: 0,
-      opacity: 0,
-      transition: "all 500ms ease-in-out",
-      background: "linear-gradient(54.7deg, #0ad8c7 12%,#960ead 100%)",
-    },
-    "&:hover": {
-      "&:before": {
-        opacity: 1,
-        color: "#fff",
-      },
-    }, */
-    lineHeight: "68px",
-    padding: "0 24px",
   },
   btnSpanText: {
     zIndex: 2,
     position: "relative",
+    fontWeight: 400,
+    fontSize: "1.5rem",
+    color: "#fff",
+    textTransform: "uppercase",
+    letterSpacing: "4px",
   },
   textSpector: {
     marginTop: 10,
@@ -145,7 +109,9 @@ const Intro = (props) => {
               scale: 1.1,
             }}
           >
-            <span className={classes.btnSpanText}>УПАКОВАТЬ СВОЙ БРЕНД</span>
+            <Typography className={classes.btnSpanText}>
+              УПАКОВАТЬ СВОЙ БРЕНД
+            </Typography>
           </motion.Button>
           <Typography variant="body1" className={classes.textSpector}>
             Огромный спектр для твоего бизнеса
@@ -158,7 +124,11 @@ const Intro = (props) => {
         </Grid>
         <Grid item xs={12} md={4} lg={3} className={classes.rightBlock}>
           <div className={classes.animationBlock}>
-            <img src="./../assets/iPhone.png" className={classes.iPhone} />
+            <img
+              src="./../assets/iPhone.png"
+              alt=""
+              className={classes.iPhone}
+            />
           </div>
         </Grid>
       </Grid>

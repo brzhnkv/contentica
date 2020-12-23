@@ -103,7 +103,11 @@ const Header = (props) => {
               </Link>
             </Box>
             <Box className={classes.middleLogo}>
-              <img src="/../../assets/logo.png" className={classes.logo}></img>
+              <img
+                src="/../../assets/logo.png"
+                alt=""
+                className={classes.logo}
+              ></img>
             </Box>
             <Box className={classes.rightChild}>
               <PermPhoneMsgIcon className={classes.iconPhone} />

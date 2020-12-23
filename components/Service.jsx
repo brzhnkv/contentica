@@ -165,8 +165,14 @@ const Service = (props) => {
                 <Typography variant="h6">{p.subtitle}</Typography>
               </Paper>
               <Paper square className={classes.block}>
-                {p.description.map((i) => {
-                  return <li className={classes.list}>{i}</li>;
+                {p.description.map((i, index) => {
+                  return (
+                    <ul key={index}>
+                      <li key={index} className={classes.list}>
+                        {i}
+                      </li>
+                    </ul>
+                  );
                 })}
               </Paper>
             </Grid>
