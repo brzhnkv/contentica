@@ -10,42 +10,48 @@ export default class MyDocument extends Document {
         <Head>
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
-          <link rel="stylesheet" href="/styles/styles.css" />
+
           <link
             rel="preload"
             href="/fonts/TRYVesterbro-Regular.otf"
             as="font"
-            crossOrigin=""
+            type="font/otf"
+            crossOrigin="anonymous"
           />
           <link
             rel="preload"
             href="/fonts/TRYVesterbro-Medium.otf"
             as="font"
-            crossOrigin=""
+            type="font/otf"
+            crossOrigin="anonymous"
           />
           <link
             rel="preload"
             href="/fonts/TRYVesterbro-Poster.otf"
             as="font"
-            crossOrigin=""
+            type="font/otf"
+            crossOrigin="anonymous"
           />
           <link
             rel="preload"
             href="/fonts/TRYVesterbro-Light.otf"
             as="font"
-            crossOrigin=""
+            type="font/otf"
+            crossOrigin="anonymous"
           />
           <link
             rel="preload"
             href="/fonts/TRYVesterbro-Bold.otf"
             as="font"
-            crossOrigin=""
+            type="font/otf"
+            crossOrigin="anonymous"
           />
           <link
             rel="preload"
             href="/fonts/TRYVesterbro-Extrabold.otf"
             as="font"
-            crossOrigin=""
+            type="font/otf"
+            crossOrigin="anonymous"
           />
         </Head>
         <body>
