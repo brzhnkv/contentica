@@ -15,43 +15,37 @@ export default class MyDocument extends Document {
             rel="preload"
             href="/fonts/TRYVesterbro-Regular.otf"
             as="font"
-            type="font/otf"
-            crossOrigin="anonymous"
+            crossOrigin=""
           />
           <link
             rel="preload"
             href="/fonts/TRYVesterbro-Medium.otf"
             as="font"
-            type="font/otf"
-            crossOrigin="anonymous"
+            crossOrigin=""
           />
           <link
             rel="preload"
             href="/fonts/TRYVesterbro-Poster.otf"
             as="font"
-            type="font/otf"
-            crossOrigin="anonymous"
+            crossOrigin=""
           />
           <link
             rel="preload"
             href="/fonts/TRYVesterbro-Light.otf"
             as="font"
-            type="font/otf"
-            crossOrigin="anonymous"
+            crossOrigin=""
           />
           <link
             rel="preload"
             href="/fonts/TRYVesterbro-Bold.otf"
             as="font"
-            type="font/otf"
-            crossOrigin="anonymous"
+            crossOrigin=""
           />
           <link
             rel="preload"
             href="/fonts/TRYVesterbro-Extrabold.otf"
             as="font"
-            type="font/otf"
-            crossOrigin="anonymous"
+            crossOrigin=""
           />
         </Head>
         <body>
