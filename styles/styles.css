@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  width: 100%;
+  overflow: auto;
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(17, 45, 96, 1) 100%
+  );
+}
+
+@font-face {
+  font-family: "TRY Vesterbro";
+  src: url("/fonts/TRYVesterbro-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TRY Vesterbro";
+  src: url("/fonts/TRYVesterbro-Extrabold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TRY Vesterbro";
+  src: url("/fonts/TRYVesterbro-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TRY Vesterbro";
+  src: url("/fonts/TRYVesterbro-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TRY Vesterbro";
+  src: url("/fonts/TRYVesterbro-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TRY Vesterbro";
+  src: url("/fonts/TRYVesterbro-Poster.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
