@@ -17,6 +17,7 @@ export default class MyDocument extends Document {
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
+            crossorigin="anonymous"
           />
           <link
             rel="preload"
@@ -24,6 +25,7 @@ export default class MyDocument extends Document {
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
+            crossorigin="anonymous"
           />
           <link
             rel="preload"
@@ -31,6 +33,7 @@ export default class MyDocument extends Document {
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
+            crossorigin="anonymous"
           />
           <link
             rel="preload"
@@ -38,6 +41,7 @@ export default class MyDocument extends Document {
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
+            crossorigin="anonymous"
           />
           <link
             rel="preload"
@@ -45,6 +49,7 @@ export default class MyDocument extends Document {
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
+            crossorigin="anonymous"
           />
           <link
             rel="preload"
@@ -52,6 +57,7 @@ export default class MyDocument extends Document {
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
+            crossorigin="anonymous"
           />
         </Head>
         <body>
