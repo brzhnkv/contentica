@@ -6,12 +6,17 @@ import Second from "../components/Second";
 import Advantages from "../components/Advantages";
 import CheckList from "../components/CheckList";
 import Service from "../components/Service";
+import Pulse from "../components/Pulse";
+import Post from "../components/Post";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  /*  root: {
     background: "rgb(182,192,197)",
     background:
       "linear-gradient(90deg, rgba(182,192,197,1) 0%, rgba(17,45,96,1) 100%)",
+  }, */
+  root: {
+    minHeight: "100vh",
   },
 }));
 
@@ -20,11 +25,17 @@ export default function Home() {
 
   return (
     <Layout className={classes.root}>
-      <Intro />
+      {/*  <Pulse /> */}
+      <Post />
+      {/*  <Post />
+      <Post />
+      <Post /> */}
+
+      {/* <Intro />
       <Second />
       <Advantages />
       <CheckList />
-      <Service />
+      <Service /> */}
     </Layout>
   );
 }

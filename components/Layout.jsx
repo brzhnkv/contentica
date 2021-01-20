@@ -4,6 +4,8 @@ import React from "react";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Container from "@material-ui/core/Container";
 import CssBaseline from "@material-ui/core/CssBaseline/CssBaseline";
+import Instagram from "./header/Instagram";
+import Footer from "./footer/Footer";
 
 const useStyles = makeStyles((theme) => ({}));
 
@@ -13,14 +15,15 @@ const Layout = (props) => {
   return (
     <>
       <Head>
-        <title>InstaNext</title>
+        <title>Con.Tentica</title>
       </Head>
-
-      <CssBaseline>
+      <>
+        <CssBaseline />
         <Header />
 
         {props.children}
-      </CssBaseline>
+        <Footer />
+      </>
     </>
   );
 };

@@ -6,6 +6,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "../src/theme";
 import "../styles/styles.css";
 import "../public/fonts/fonts.css";
+import FacebookPixel from "../components/FacebookPixel";
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
@@ -28,11 +29,13 @@ export default function MyApp(props) {
         />
         <link rel="stylesheet" href="/fonts/fonts.css" />
       </Head>
-      <ThemeProvider theme={theme}>
-        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-        <CssBaseline />
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <FacebookPixel>
+        <ThemeProvider theme={theme}>
+          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+          <CssBaseline />
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </FacebookPixel>
     </React.Fragment>
   );
 }

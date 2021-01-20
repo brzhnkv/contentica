@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     width: 450,
     height: 70,
     fontSize: 20,
-    marginTop: 80,
+    marginTop: 60,
     verticalAlign: "middle",
     userSelect: "none",
     cursor: "pointer",
@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage:
       "linear-gradient(54.7deg, #960ead, #0ad8c7, #960ead, #0ad8c7)",
     backgroundSize: "300% 100%",
+    borderRadius: "50px",
     animation: "$gradient 2.5s infinite linear",
   },
   btnSpanText: {
@@ -51,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
   },
   textSpector: {
     marginTop: 10,
+    fontSize: "1.2rem",
   },
   textBottom: {
     marginTop: 150,
@@ -85,7 +87,7 @@ const Intro = (props) => {
 
   return (
     <Container maxWidth="lg" disableGutters>
-      <Grid container spacing={0}>
+      <Grid container>
         <Grid item xs={12} md={8} lg={9}></Grid>
         <Grid item xs={12} md={4} lg={3} className={classes.rightBlock}>
           <Typography variant="h3" className={classes.title}>
@@ -97,11 +99,12 @@ const Intro = (props) => {
           </Typography>
         </Grid>
       </Grid>
-      <Grid container spacing={0}>
+      <Grid container>
         <Grid item xs={12} md={8} lg={9} className={classes.leftBlock}>
           <Typography variant="h6">
-            Увеличим активность Вашего профиля
-            <br /> на 43% за 3 недели
+            Создание и продвижение
+            <br />
+            личного бренда в Instagram
           </Typography>
           <motion.Button
             className={classes.button}
@@ -114,7 +117,7 @@ const Intro = (props) => {
             </Typography>
           </motion.Button>
           <Typography variant="body1" className={classes.textSpector}>
-            Огромный спектр для твоего бизнеса
+            Огромный спектр услуг для твоего бизнеса
           </Typography>
           <Typography variant="h6" className={classes.textBottom}>
             Не трать лишние время и деньги
