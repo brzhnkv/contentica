@@ -11,6 +11,10 @@ export default class MyDocument extends Document {
         <Head>
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
+          <meta
+            name="facebook-domain-verification"
+            content="mntnmcyou2il8ov3bk19l8zfdl0dvg"
+          />
           <link rel="stylesheet" href="/fonts/fonts.css" />
           <link
             rel="preload"
