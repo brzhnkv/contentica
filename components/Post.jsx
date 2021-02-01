@@ -16,6 +16,7 @@ import {
   CardMedia,
   CardContent,
   CardActions,
+  Divider,
 } from "@material-ui/core";
 import { red } from "@material-ui/core/colors";
 
@@ -53,7 +54,6 @@ const useStyles = makeStyles((theme) => ({
     minWidth: "60%",
     maxWidth: "60%",
 
-    marginTop: 20,
     marginBottom: 50,
   },
   media: {
@@ -63,20 +63,30 @@ const useStyles = makeStyles((theme) => ({
 
   avatar: {
     backgroundColor: red[500],
+    width: 150,
+    height: 150,
+  },
+
+  postTitle: {
+    color: theme.palette.primary.main,
   },
 }));
 
-const Post = (props) => {
+const Post = ({ title, subtitle, picUrl, content }) => {
   const classes = useStyles();
 
   return (
-    <Container maxWidth={false} disableGutters disableSpacing>
+    <Container maxWidth={false} disableGutters>
       <div className={classes.root}>
-        <Card className={classes.card}>
+        <Card className={classes.card} variant="outlined">
           <CardHeader
             avatar={
-              <Avatar aria-label="recipe" className={classes.avatar}>
-                R
+              <Avatar
+                aria-label="recipe"
+                className={classes.avatar}
+                src={picUrl}
+              >
+                Con.logo
               </Avatar>
             }
             action={
@@ -84,21 +94,24 @@ const Post = (props) => {
                 {/*    <MoreVertIcon /> */}
               </IconButton>
             }
-            title="Shrimp and Chorizo Paella"
-            subheader="September 14, 2016"
+            title={
+              <Typography variant="h3" className={classes.postTitle}>
+                {title}
+              </Typography>
+            }
+            subheader={
+              <Typography variant="h5" className={classes.postTitle}>
+                {subtitle}
+              </Typography>
+            }
           />
-          <CardMedia
+          <Divider />
+          {/*  <CardMedia
             className={classes.media}
-            image="/static/images/cards/paella.jpg"
+            image={picUrl}
             title="Paella dish"
-          />
-          <CardContent>
-            <Typography variant="body2" color="textSecondary" component="p">
-              This impressive paella is a perfect party dish and a fun meal to
-              cook together with your guests. Add 1 cup of frozen peas along
-              with the mussels, if you like.
-            </Typography>
-          </CardContent>
+          /> */}
+          <CardContent>{content}</CardContent>
           <CardActions disableSpacing>
             <IconButton aria-label="add to favorites">
               {/*   <FavoriteIcon /> */}

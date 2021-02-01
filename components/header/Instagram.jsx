@@ -1,18 +1,23 @@
+import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import React from "react";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: "flex",
-    flex: 1,
-    alignItems: "center",
     width: "100vw",
-    height: "40px",
+    height: 35,
     backgroundColor: "#fafafa",
   },
-  title: {
+  container: {
+    display: "flex",
+
+    minWidth: "60%",
+    maxWidth: "60%",
+  },
+  logoInstagram: {
     marginLeft: "20px",
-    fontSize: "1.2rem",
+    paddingTop: 4,
+    color: "#232323",
   },
 }));
 
@@ -21,7 +26,12 @@ const Instagram = (props) => {
 
   return (
     <div className={classes.root}>
-      <span className={classes.title}>Instagram</span>
+      <Container maxWidth={false} disableGutters className={classes.container}>
+        <img
+          className={classes.logoInstagram}
+          src="/assets/logo_instagram.png"
+        />
+      </Container>
     </div>
   );
 };
