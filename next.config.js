@@ -1,8 +1,8 @@
 const withCSS = require("@zeit/next-css");
 const withFonts = require("next-fonts");
 
-const withTM = require("next-transpile-modules")(["react-dvd-screensaver"]);
-const withPlugins = require("next-compose-plugins");
+/* const withTM = require("next-transpile-modules")(["react-dvd-screensaver"]);
+const withPlugins = require("next-compose-plugins"); */
 
 const nextConfig = {
   target: "serverless",
@@ -13,5 +13,5 @@ const nextConfig = {
   },
 };
 
-//module.exports = withFonts(withCSS());
-module.exports = withPlugins([withTM, withFonts, withCSS], nextConfig);
+module.exports = withCSS(withFonts());
+//module.exports = withPlugins([withTM, withFonts, withCSS], nextConfig);

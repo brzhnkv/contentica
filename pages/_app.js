@@ -5,7 +5,7 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "../src/theme";
 import "../styles/styles.css";
-import "../public/fonts/fonts.css";
+//import "../public/fonts/fonts.css";
 import FacebookPixel from "../components/FacebookPixel";
 
 export default function MyApp(props) {
