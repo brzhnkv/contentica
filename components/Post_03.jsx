@@ -9,7 +9,7 @@ import { Container, Grid, Button, Typography, Box } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    /* backgroundColor: "#fff", */
+    /* backgroundColor: "rgb(249,215,214)", */
   },
   topBlock: {
     display: "flex",

@@ -234,19 +234,19 @@ export default function Portfolio() {
         <Divider className={classes.divider} variant="fullWidth" />
         <div className={classes.grid}>
           <div className="col">
-            <img src="/assets/300*300.png" />
-            <img src="/assets/300*300.png" />
-            <img src="/assets/300*300.png" />
+            <img src="/assets/300x300.png" />
+            <img src="/assets/300x300.png" />
+            <img src="/assets/300x300.png" />
           </div>
           <div className="col">
-            <img src="/assets/300*300.png" />
-            <img src="/assets/300*300.png" />
-            <img src="/assets/300*300.png" />
+            <img src="/assets/300x300.png" />
+            <img src="/assets/300x300.png" />
+            <img src="/assets/300x300.png" />
           </div>
           <div className="col">
-            <img src="/assets/300*300.png" />
-            <img src="/assets/300*300.png" />
-            <img src="/assets/300*300.png" />
+            <img src="/assets/300x300.png" />
+            <img src="/assets/300x300.png" />
+            <img src="/assets/300x300.png" />
           </div>
         </div>
       </Container>

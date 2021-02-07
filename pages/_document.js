@@ -21,42 +21,42 @@ export default class MyDocument extends Document {
             as="font"
             href="/fonts/TRYVesterbro-Regular.woff2"
             type="font/woff2"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           />
           <link
             rel="preload"
             as="font"
             href="/fonts/TRYVesterbro-Medium.woff2"
             type="font/woff2"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           />
           <link
             rel="preload"
             as="font"
             href="/fonts/TRYVesterbro-Poster.woff2"
             type="font/woff2"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           />
           <link
             rel="preload"
             as="font"
             href="/fonts/TRYVesterbro-Light.woff2"
             type="font/woff2"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           />
           <link
             rel="preload"
             as="font"
             href="/fonts/TRYVesterbro-Bold.woff2"
             type="font/woff2"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           />
           <link
             rel="preload"
             as="font"
             href="/fonts/TRYVesterbro-Extrabold.woff2"
             type="font/woff2"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           />
           {/* Global Site Code Pixel - Facebook Pixel */}
           <script

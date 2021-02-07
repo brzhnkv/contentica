@@ -16,6 +16,7 @@ import Post_05 from "../components/Post_05";
 import Post_06 from "../components/Post_06";
 import Post_07 from "../components/Post_07";
 import Post_08 from "../components/Post_08";
+import PostPricing from "../components/pricing/PostPricing";
 
 const useStyles = makeStyles((theme) => ({
   /*  root: {
@@ -92,6 +93,9 @@ export default function Home() {
   return (
     <Layout className={classes.root}>
       {/*  <Pulse /> */}
+
+      <PostPricing />
+
       {posts.map((i, index) => {
         return (
           <Post
@@ -103,6 +107,7 @@ export default function Home() {
           />
         );
       })}
+
       {/*  <Intro /> */}
       <Second />
       <Advantages />
