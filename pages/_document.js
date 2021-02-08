@@ -18,42 +18,42 @@ export default class MyDocument extends Document {
           <link rel="stylesheet preload style" href="/fonts/fonts.css" />
           <link
             rel="preload"
-            as="style"
+            as="font"
             type="font/woff2"
             href="/fonts/TRYVesterbro-Regular.woff2"
             crossorigin="anonymous"
           />
           <link
             rel="preload"
-            as="style"
+            as="font"
             type="font/woff2"
             href="/fonts/TRYVesterbro-Medium.woff2"
             crossorigin="anonymous"
           />
           <link
             rel="preload"
-            as="style"
+            as="font"
             type="font/woff2"
             href="/fonts/TRYVesterbro-Poster.woff2"
             crossorigin="anonymous"
           />
           <link
             rel="preload"
-            as="style"
+            as="font"
             type="font/woff2"
             href="/fonts/TRYVesterbro-Light.woff2"
             crossorigin="anonymous"
           />
           <link
             rel="preload"
-            as="style"
+            as="font"
             type="font/woff2"
             href="/fonts/TRYVesterbro-Bold.woff2"
             crossorigin="anonymous"
           />
           <link
             rel="preload"
-            as="style"
+            as="font"
             type="font/woff2"
             href="/fonts/TRYVesterbro-Extrabold.woff2"
             crossorigin="anonymous"
