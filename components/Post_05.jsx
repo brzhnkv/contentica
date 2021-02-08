@@ -9,7 +9,6 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
-import styles from "../styles/slider.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,11 +22,11 @@ const Post_05 = (props) => {
 
   return (
     <div className={classes.root}>
-      <AwesomeSlider cssModule={styles}>
+      {/*    <AwesomeSlider cssModule={styles}>
         <div data-src="/assets/posts/post_01/post_picture.png" />
         <div data-src="/path/to/image-1.png" />
         <div data-src="/path/to/image-2.jpg" />
-      </AwesomeSlider>
+      </AwesomeSlider> */}
     </div>
   );
 };
