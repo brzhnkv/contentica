@@ -15,49 +15,50 @@ export default class MyDocument extends Document {
             name="facebook-domain-verification"
             content="mntnmcyou2il8ov3bk19l8zfdl0dvg"
           />
-          <link rel="preload" href="/fonts/fonts.css" as="style" />
+
           <link
             rel="preload"
             as="font"
             type="font/woff2"
             href="/fonts/TRYVesterbro-Regular.woff2"
-            crossOrigin="anonymous"
+            crossorigin="anonymous"
           />
           <link
             rel="preload"
             as="font"
             type="font/woff2"
             href="/fonts/TRYVesterbro-Medium.woff2"
-            crossOrigin="anonymous"
+            crossorigin="anonymous"
           />
           <link
             rel="preload"
             as="font"
             type="font/woff2"
             href="/fonts/TRYVesterbro-Poster.woff2"
-            crossOrigin="anonymous"
+            crossorigin="anonymous"
           />
           <link
             rel="preload"
             as="font"
             type="font/woff2"
             href="/fonts/TRYVesterbro-Light.woff2"
-            crossOrigin="anonymous"
+            crossorigin="anonymous"
           />
           <link
             rel="preload"
             as="font"
             type="font/woff2"
             href="/fonts/TRYVesterbro-Bold.woff2"
-            crossOrigin="anonymous"
+            crossorigin="anonymous"
           />
           <link
             rel="preload"
             as="font"
             type="font/woff2"
             href="/fonts/TRYVesterbro-Extrabold.woff2"
-            crossOrigin="anonymous"
+            crossorigin="anonymous"
           />
+          <link rel="stylesheet" href="/fonts/fonts.css" />
           {/* Global Site Code Pixel - Facebook Pixel */}
           <script
             dangerouslySetInnerHTML={{
