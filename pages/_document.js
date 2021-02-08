@@ -19,38 +19,38 @@ export default class MyDocument extends Document {
           <link
             rel="preload"
             as="font"
+            type="font/woff2"
             href="/fonts/TRYVesterbro-Regular.woff2"
-            type="font"
           />
           <link
             rel="preload"
             as="font"
             href="/fonts/TRYVesterbro-Medium.woff2"
-            type="font"
+            type="font/woff2"
           />
           <link
             rel="preload"
             as="font"
+            type="font/woff2"
             href="/fonts/TRYVesterbro-Poster.woff2"
-            type="font"
           />
           <link
             rel="preload"
             as="font"
+            type="font/woff2"
             href="/fonts/TRYVesterbro-Light.woff2"
-            type="font"
           />
           <link
             rel="preload"
             as="font"
+            type="font/woff2"
             href="/fonts/TRYVesterbro-Bold.woff2"
-            type="font"
           />
           <link
             rel="preload"
             as="font"
+            type="font/woff2"
             href="/fonts/TRYVesterbro-Extrabold.woff2"
-            type="font"
           />
           {/* Global Site Code Pixel - Facebook Pixel */}
           <script
