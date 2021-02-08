@@ -1,9 +1,13 @@
+body {
+  font-family: "TRY Vesterbro", sans-serif;
+}
+
 @font-face {
   font-family: "TRY Vesterbro";
   src: url("/fonts/TRYVesterbro-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
@@ -11,7 +15,7 @@
   src: url("/fonts/TRYVesterbro-Extrabold.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
@@ -19,7 +23,7 @@
   src: url("/fonts/TRYVesterbro-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
@@ -27,7 +31,7 @@
   src: url("/fonts/TRYVesterbro-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
@@ -35,7 +39,7 @@
   src: url("/fonts/TRYVesterbro-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
@@ -43,5 +47,5 @@
   src: url("/fonts/TRYVesterbro-Poster.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
