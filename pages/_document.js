@@ -20,43 +20,37 @@ export default class MyDocument extends Document {
             rel="preload"
             as="font"
             href="/fonts/TRYVesterbro-Regular.woff2"
-            type="font/woff2"
-            crossorigin=""
+            type="font"
           />
           <link
             rel="preload"
             as="font"
             href="/fonts/TRYVesterbro-Medium.woff2"
-            type="font/woff2"
-            crossorigin=""
+            type="font"
           />
           <link
             rel="preload"
             as="font"
             href="/fonts/TRYVesterbro-Poster.woff2"
-            type="font/woff2"
-            crossorigin=""
+            type="font"
           />
           <link
             rel="preload"
             as="font"
             href="/fonts/TRYVesterbro-Light.woff2"
-            type="font/woff2"
-            crossorigin=""
+            type="font"
           />
           <link
             rel="preload"
             as="font"
             href="/fonts/TRYVesterbro-Bold.woff2"
-            type="font/woff2"
-            crossorigin=""
+            type="font"
           />
           <link
             rel="preload"
             as="font"
             href="/fonts/TRYVesterbro-Extrabold.woff2"
-            type="font/woff2"
-            crossorigin=""
+            type="font"
           />
           {/* Global Site Code Pixel - Facebook Pixel */}
           <script
