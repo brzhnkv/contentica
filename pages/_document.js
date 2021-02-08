@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
             name="facebook-domain-verification"
             content="mntnmcyou2il8ov3bk19l8zfdl0dvg"
           />
-
+          <link rel="preload" as="style" href="/fonts/fonts.css"></link>
           <link
             rel="preload"
             href="/fonts/TRYVesterbro-Regular.woff2"
@@ -58,7 +58,7 @@ export default class MyDocument extends Document {
             type="font/woff2"
             crossOrigin="anonymous"
           />
-          <link rel="stylesheet" href="/fonts/fonts.css" />
+
           {/* Global Site Code Pixel - Facebook Pixel */}
           <script
             dangerouslySetInnerHTML={{
