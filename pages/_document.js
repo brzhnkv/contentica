@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
             name="facebook-domain-verification"
             content="mntnmcyou2il8ov3bk19l8zfdl0dvg"
           />
-          <link rel="stylesheet preload style" href="/fonts/fonts.css" />
+          <link rel="preload" href="/fonts/fonts.css" as="style" />
           <link
             rel="preload"
             as="font"
