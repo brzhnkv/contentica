@@ -21,28 +21,28 @@ export default class MyDocument extends Document {
             href="/fonts/TRYVesterbro-Regular.woff2"
             as="font"
             type="font/woff2"
-            //crossorigin="anonymous"
+            crossorigin="anonymous"
           />
           <link
             rel="preload"
             href="/fonts/TRYVesterbro-Medium.woff2"
             as="font"
             type="font/woff2"
-            // crossorigin="anonymous"
+            crossorigin="anonymous"
           />
           <link
             rel="preload"
             href="/fonts/TRYVesterbro-Poster.woff2"
             as="font"
             type="font/woff2"
-            //  crossorigin="anonymous"
+            crossorigin="anonymous"
           />
           <link
             rel="preload"
             href="/fonts/TRYVesterbro-Light.woff2"
             as="font"
             type="font/woff2"
-            crossorigin
+            crossorigin="anonymous"
           />
           <link
             rel="preload"
