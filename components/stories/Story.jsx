@@ -15,24 +15,27 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
   },
   player: {
-    position: "absolute",
-    left: "50%",
-    marginLeft: "-20px" /*the half width */,
+    position: "relative",
   },
   storyPicture: {
-    flex: 1,
-
-    width: 66,
-    height: 66,
-
+    position: "absolute",
+    width: 56,
+    height: 56,
+    left: "50%",
+    top: "50%",
+    transform: "translate(-50%, -50%)",
     "&:hover": {
       cursor: "pointer",
     },
   },
   storyTitle: {
     color: "black",
-    fontWeight: 300,
-    fontSize: 15,
+    fontFamily: "FM Bolyar Sans Pro",
+    fontWeight: 400,
+    fontSize: 12,
+    /*  fontSmooth: "never",
+    webkitFontSmoothing: "none", */
+
     "&:hover": {
       cursor: "pointer",
     },
@@ -49,28 +52,31 @@ const Story = ({ refPlayer, index, storyTitle, storyPicture, link }) => {
 
   return (
     <div className={classes.story}>
-      <Player
-        ref={(ref) => refPlayer.current.splice(index, 0, ref)}
-        autoplay
-        src="/assets/lottie/gradient-loading-bar.json" /* https://assets3.lottiefiles.com/packages/lf20_9OjdGh.json */
-        style={{
-          width: 72,
-          position: "absolute",
-          left: "50%",
-          transform: "translateX(-50%)",
-          marginTop: -3,
-        }}
-      ></Player>
-      <Link href={link}>
-        <Avatar
-          className={classes.storyPicture}
-          src={storyPicture}
-          onMouseEnter={() => {
-            animateStory(index);
+      <div className={classes.player}>
+        <Player
+          ref={(ref) => refPlayer.current.splice(index, 0, ref)}
+          autoplay
+          src="/assets/lottie/gradient-loading-bar.json" /* https://assets3.lottiefiles.com/packages/lf20_9OjdGh.json */
+          style={{
+            width: 66,
+            height: 66,
+            position: "relative",
+            left: "50%",
+            transform: "translateX(-50%)",
           }}
-        />
-      </Link>
-
+        >
+          {" "}
+          <Link href={link}>
+            <Avatar
+              className={classes.storyPicture}
+              src={storyPicture}
+              onMouseEnter={() => {
+                animateStory(index);
+              }}
+            ></Avatar>
+          </Link>
+        </Player>
+      </div>
       <Typography className={classes.storyTitle}>{storyTitle}</Typography>
     </div>
   );

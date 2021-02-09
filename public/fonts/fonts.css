@@ -49,3 +49,25 @@ body {
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "FM Bolyar Sans Pro";
+  src: url("/fonts/FMBolyarSansPro-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FM Bolyar Sans Pro";
+  src: url("/fonts/FMBolyarSansPro-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FM Bolyar Sans Pro";
+  src: url("/fonts/FMBolyarSansPro-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

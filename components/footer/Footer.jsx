@@ -33,7 +33,9 @@ const useStyles = makeStyles((theme) => ({
   },
   element: {
     color: "rgb(26,26,34)",
-    fontWeight: 300,
+
+    fontWeight: 500,
+    fontSize: 12,
   },
 }));
 
