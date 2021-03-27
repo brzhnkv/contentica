@@ -1,92 +1,46 @@
-import React, { useRef } from "react";
-
-import makeStyles from "@material-ui/core/styles/makeStyles";
-import Container from "@material-ui/core/Container";
+import React from "react";
 import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Box from "@material-ui/core/Box";
-
-import Instagram from "./Instagram";
-import Story from "../stories/Story";
-
-const stories = [
-  {
-    storyTitle: "мы",
-    storyPicture: "/../../assets/stories/story_01.png",
-    link: "/",
-  },
-  {
-    storyTitle: "портфолио",
-    storyPicture: "/../../assets/stories/story_02.jpg",
-    link: "/portfolio",
-  },
-  {
-    storyTitle: "услуги",
-    storyPicture: "/../../assets/stories/story_02.jpg",
-    link: "/",
-  },
-  {
-    storyTitle: "что-то еще",
-    storyPicture: "/../../assets/stories/story_02.jpg",
-    link: "/",
-  },
-  {
-    storyTitle: "...",
-    storyPicture: "/../../assets/stories/story_02.jpg",
-    link: "/",
-  },
-];
+import { Container } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  appBar: {
+    width: "100vw",
+    height: 55,
     backgroundColor: "white",
+    display: "flex",
+    justifyContent: "center",
   },
+
   container: {
+    display: "flex",
+
     minWidth: "60%",
     maxWidth: "60%",
   },
-  storiesBar: {
-    height: 100,
-  },
-  storiesWrapper: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  graySpace: {
-    width: "100vw",
-    height: 25,
-    backgroundColor: "#fafafa",
+
+  logoInstagram: {
+    marginLeft: "20px",
+    paddingTop: 4,
+    color: "#232323",
+    "&:hover": {
+      cursor: "pointer",
+    },
   },
 }));
 
-const Header = (props) => {
+const Header = () => {
   const classes = useStyles();
-
-  const refPlayer = useRef([]);
-
   return (
-    <AppBar position="sticky" className={classes.root} elevation={0}>
-      <Instagram />
+    <AppBar position={"sticky"} elevation={1} className={classes.appBar}>
       <Container maxWidth={false} disableGutters className={classes.container}>
-        <Toolbar className={classes.storiesBar}>
-          <Box className={classes.storiesWrapper}>
-            {stories.map((i, index) => {
-              return (
-                <Story
-                  key={index}
-                  refPlayer={refPlayer}
-                  index={index}
-                  storyTitle={i.storyTitle}
-                  storyPicture={i.storyPicture}
-                  link={i.link}
-                />
-              );
-            })}
-          </Box>
-        </Toolbar>
+        <a href="https://instagram.com/con.tentica" target="_blank">
+          <img
+            className={classes.logoInstagram}
+            src="/assets/logo_instagram.png"
+          />
+        </a>
       </Container>
-      <div className={classes.graySpace}></div>
     </AppBar>
   );
 };

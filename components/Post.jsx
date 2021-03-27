@@ -49,10 +49,11 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     backgroundColor: "#fafafa",
     margin: 0,
+    minWidth: "100%",
   },
   card: {
-    minWidth: "60%",
-    maxWidth: "60%",
+    minWidth: "100%",
+    maxWidth: "100%",
 
     marginBottom: 50,
   },
@@ -76,51 +77,45 @@ const Post = ({ title, subtitle, picUrl, content }) => {
   const classes = useStyles();
 
   return (
-    <Container maxWidth={false} disableGutters>
-      <div className={classes.root}>
-        <Card className={classes.card} variant="outlined">
-          <CardHeader
-            avatar={
-              <Avatar
-                aria-label="recipe"
-                className={classes.avatar}
-                src={picUrl}
-              >
-                Con.logo
-              </Avatar>
-            }
-            action={
-              <IconButton aria-label="settings">
-                {/*    <MoreVertIcon /> */}
-              </IconButton>
-            }
-            title={
-              <Typography variant="h3" className={classes.postTitle}>
-                {title}
-              </Typography>
-            }
-            subheader={
-              <Typography variant="h5" className={classes.postTitle}>
-                {subtitle}
-              </Typography>
-            }
-          />
-          <Divider />
-          {/*  <CardMedia
+    <div className={classes.root}>
+      <Card className={classes.card} variant="outlined">
+        <CardHeader
+          avatar={
+            <Avatar aria-label="recipe" className={classes.avatar} src={picUrl}>
+              Con.logo
+            </Avatar>
+          }
+          action={
+            <IconButton aria-label="settings">
+              {/*    <MoreVertIcon /> */}
+            </IconButton>
+          }
+          title={
+            <Typography variant="h3" className={classes.postTitle}>
+              {title}
+            </Typography>
+          }
+          subheader={
+            <Typography variant="h5" className={classes.postTitle}>
+              {subtitle}
+            </Typography>
+          }
+        />
+        <Divider />
+        {/*  <CardMedia
             className={classes.media}
             image={picUrl}
             title="Paella dish"
           /> */}
-          <CardContent>{content}</CardContent>
-          <CardActions disableSpacing>
-            <IconButton aria-label="add to favorites">
-              {/*   <FavoriteIcon /> */}
-            </IconButton>
-            <IconButton aria-label="share">{/*  <ShareIcon /> */}</IconButton>
-          </CardActions>
-        </Card>
-      </div>
-    </Container>
+        <CardContent>{content}</CardContent>
+        <CardActions disableSpacing>
+          <IconButton aria-label="add to favorites">
+            {/*   <FavoriteIcon /> */}
+          </IconButton>
+          <IconButton aria-label="share">{/*  <ShareIcon /> */}</IconButton>
+        </CardActions>
+      </Card>
+    </div>
   );
 };
 

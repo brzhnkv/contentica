@@ -19,19 +19,17 @@ import Modal from "./Modal";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
     backgroundColor: "#fafafa",
-    margin: 0,
   },
   card: {
-    minWidth: "60%",
-    maxWidth: "60%",
-    height: 750,
+    minWidth: "100%",
+    maxWidth: "100%",
+
+    display: "flex",
+    flexDirection: "column",
     backgroundColor: "rgb(249,215,214)",
     position: "relative",
-    marginBottom: 50,
+    // marginBottom: 50,
     "&::after": {
       content: '""',
       height: "25%",
@@ -42,14 +40,20 @@ const useStyles = makeStyles((theme) => ({
       bottom: 0,
     },
   },
-  cardHeader: {
+  postHeader: {
     backgroundColor: "white",
-    height: 150,
+    flex: 1,
+    // minHeight: "50%",
   },
+  postContent: {
+    flex: 1,
+    //height: "90%",
+  },
+
   avatar: {
     backgroundColor: red[500],
-    width: 120,
-    height: 120,
+    width: "50%",
+    height: "50%", //120
   },
   postTitle: {
     color: theme.palette.primary.main,
@@ -69,16 +73,26 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const PostPricing = ({ title, subtitle, picUrl, content }) => {
+const PostPricing = ({
+  scrollRef,
+  index,
+  title,
+  subtitle,
+  picUrl,
+  content,
+}) => {
   const [activeSlide, setActiveSlide] = React.useState(0);
   const color = slides[activeSlide].color;
   const classes = useStyles({ color });
 
   return (
     <div className={classes.root}>
-      <Card className={classes.card}>
+      <Card
+        className={classes.card}
+        ref={(ref) => scrollRef.current.splice(index, 0, ref)}
+      >
         <CardHeader
-          className={classes.cardHeader}
+          className={classes.postHeader}
           avatar={
             <Avatar aria-label="recipe" className={classes.avatar} src={picUrl}>
               image
@@ -91,7 +105,7 @@ const PostPricing = ({ title, subtitle, picUrl, content }) => {
           }
           title={
             <Typography variant="h3" className={classes.postTitle}>
-              Заголовок
+              {title}
             </Typography>
           }
           subheader={
@@ -102,7 +116,7 @@ const PostPricing = ({ title, subtitle, picUrl, content }) => {
         />
         <Divider />
 
-        <CardContent>
+        <CardContent className={classes.postContent}>
           <div className={classes.square}>{slides[activeSlide].color}</div>
           <Controls activeSlide={activeSlide} setActiveSlide={setActiveSlide} />
 

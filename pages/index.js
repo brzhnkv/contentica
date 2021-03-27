@@ -1,4 +1,5 @@
 import Head from "next/head";
+import React from "react";
 import { makeStyles } from "@material-ui/styles";
 import Layout from "../components/Layout";
 import Intro from "../components/Intro";
@@ -17,6 +18,7 @@ import Post_06 from "../components/Post_06";
 import Post_07 from "../components/Post_07";
 import Post_08 from "../components/Post_08";
 import PostPricing from "../components/pricing/PostPricing";
+import Home from "./home";
 
 const useStyles = makeStyles((theme) => ({
   /*  root: {
@@ -87,14 +89,25 @@ const posts = [
   },
 ];
 
-export default function Home() {
+export default function Index() {
   const classes = useStyles();
 
   return (
-    <Layout className={classes.root}>
-      {/*  <Pulse /> */}
+    <React.Fragment>
+      <Home />
+    </React.Fragment>
+  );
+}
 
-      <PostPricing />
+{
+  /* /*  <Layout className={classes.root}> */
+}
+{
+  /*  <Pulse /> */
+}
+
+{
+  /*  <PostPricing />
 
       {posts.map((i, index) => {
         return (
@@ -106,18 +119,25 @@ export default function Home() {
             content={i.content}
           />
         );
-      })}
+      })} */
+}
 
-      {/*  <Intro /> */}
+{
+  /*  <Intro /> */
+}
+{
+  /*  <Second />
+      <Advantages />
+      <CheckList />
+      <Service /> */
+}
+{
+  /* <Intro />
       <Second />
       <Advantages />
       <CheckList />
-      <Service />
-      {/* <Intro />
-      <Second />
-      <Advantages />
-      <CheckList />
-      <Service /> */}
-    </Layout>
-  );
+      <Service /> */
+}
+{
+  /*  </Layout> */
 }

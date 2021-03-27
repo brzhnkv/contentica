@@ -28,6 +28,11 @@ const theme = createMuiTheme({
     fontWeightRegular: 500,
     fontWeightMedium: 600,
     fontWeightBold: 400,
+    caption: {
+      fontFamily: "FM Bolyar Sans Pro",
+      fontWeight: 400,
+      fontSize: 12,
+    },
     h3: {
       fontWeight: 400,
     },
