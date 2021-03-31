@@ -85,9 +85,9 @@ const Info = () => {
           <Button variant="outlined">кнопка2</Button> */}
         </div>
         <div className={classes.infoGroup}>
-          {buttons.map((b) => {
+          {buttons.map((b, index) => {
             return (
-              <div className={classes.customButton}>
+              <div key={index} className={classes.customButton}>
                 <a href={b.link}>
                   <span>{b.quantity}</span>
                   {b.text}

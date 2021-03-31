@@ -114,7 +114,7 @@ export default function Home() {
       <Header />
       <Container maxWidth={false} disableGutters className={classes.container}>
         <Info />
-        <div className={classes.storiesBar}>
+        {/*  <div className={classes.storiesBar}>
           {stories.map((i, index) => {
             return (
               <Story
@@ -128,7 +128,7 @@ export default function Home() {
               />
             );
           })}
-        </div>
+        </div> */}
         <StoryFeed />
         <Divider className={classes.divider} variant="fullWidth" />
         <Feed />

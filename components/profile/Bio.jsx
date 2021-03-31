@@ -38,9 +38,9 @@ const Bio = () => {
   return (
     <div className={classes.bio}>
       <Typography className={classes.textTitle}>{textTitle}</Typography>
-      {textBio.map((line) => {
+      {textBio.map((line, index) => {
         return (
-          <div className={classes.textBio}>
+          <div key={index} className={classes.textBio}>
             <Typography>{line}</Typography>
             <br />
           </div>

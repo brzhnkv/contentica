@@ -79,13 +79,10 @@ export default class MyDocument extends Document {
             type="font/woff2"
             crossOrigin="anonymous"
           />
-          <link
-            rel="preload"
-            href="https://fonts.gstatic.com"
-            crossOrigin="anonymous"
-          />
+
           <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+            as="font"
             rel="stylesheet"
           />
           {/* Global Site Code Pixel - Facebook Pixel */}

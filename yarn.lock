@@ -185,6 +185,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jkroso/type@npm:1":
+  version: 1.1.1
+  resolution: "@jkroso/type@npm:1.1.1"
+  checksum: 5920bf51efa00e58b2beb8d931dd7a383d516946dffa690086674ade5c43697aaf59fed21af4d0efec2271a954c44341164740aecfa78000c774497d25684595
+  languageName: node
+  linkType: hard
+
 "@lottiefiles/react-lottie-player@npm:^3.0.0":
   version: 3.0.0
   resolution: "@lottiefiles/react-lottie-player@npm:3.0.0"
@@ -1455,7 +1462,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"classnames@npm:2.2.6":
+"classnames@npm:2.2.6, classnames@npm:^2.2.5":
   version: 2.2.6
   resolution: "classnames@npm:2.2.6"
   checksum: 490eaeca5931846737ffd33e472a701d268d5b8bc5717dd4cf108a127b06e86e05350e06799abbbe763a0e4c945b4217f6700b7ae00ddc703505682c370e5cf2
@@ -1649,12 +1656,15 @@ __metadata:
     next-compose-plugins: ^2.2.1
     node-sass: ^5.0.0
     prop-types: ^15.7.2
+    pure-react-carousel: ^1.27.6
     react: 17.0.1
+    react-animate-height: ^2.0.23
     react-awesome-slider: ^4.1.0
     react-dom: 17.0.1
     react-dvd-screensaver: ^0.0.4
     react-insta-stories: ^2.1.3
     react-swipeable-views: ^0.13.9
+    react-transition-group: ^4.4.1
   languageName: unknown
   linkType: soft
 
@@ -2005,6 +2015,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"deep-freeze@npm:0.0.1":
+  version: 0.0.1
+  resolution: "deep-freeze@npm:0.0.1"
+  checksum: c43ab54de95c60197f2a303aa60da76aa9f13f8a656d39f924daec63707712be1f75b9f5853bf2d5ec62fc72c840ba73ccefe32bdf3398472751de290b71a15c
+  languageName: node
+  linkType: hard
+
+"deepmerge@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "deepmerge@npm:2.2.1"
+  checksum: 8394eb5ab19010e4e856e96ffb570528cad00e4af35e1e774898b52fd986fa6840dbce3e9217a7a1e38683c170cf0cbfe19c67323b89d329afad0ffa72db382e
+  languageName: node
+  linkType: hard
+
 "define-property@npm:^0.2.5":
   version: 0.2.5
   resolution: "define-property@npm:0.2.5"
@@ -2285,6 +2309,15 @@ __metadata:
   version: 2.2.0
   resolution: "env-paths@npm:2.2.0"
   checksum: 09de4fd1c068d5965aa8aede852a764b7fb6fa8f1299ba7789bc29c22840ab1985e0c9c55bc6bf40b4276834b8adfa1baf82ec9bc58445d9e75800dc32d78a4f
+  languageName: node
+  linkType: hard
+
+"equals@npm:^1.0.5":
+  version: 1.1.0
+  resolution: "equals@npm:1.1.0"
+  dependencies:
+    "@jkroso/type": 1
+  checksum: fc2c1ab792e271b2fe273e2c3d182967107f51c229d87b390419f4f41ac9be1ef4727de57786a050e657775a2e0fa6e52e71b7a8f927009264331dbd789dee2b
   languageName: node
   linkType: hard
 
@@ -4993,7 +5026,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"prop-types@npm:15.7.2, prop-types@npm:^15.5.4, prop-types@npm:^15.6.0, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
+"prop-types@npm:15.7.2, prop-types@npm:^15.5.4, prop-types@npm:^15.6.0, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
   dependencies:
@@ -5084,6 +5117,22 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"pure-react-carousel@npm:^1.27.6":
+  version: 1.27.6
+  resolution: "pure-react-carousel@npm:1.27.6"
+  dependencies:
+    "@babel/runtime": ^7.5.5
+    deep-freeze: 0.0.1
+    deepmerge: ^2.2.1
+    equals: ^1.0.5
+    prop-types: ^15.6.2
+  peerDependencies:
+    react: 15.x || 16.x || 17.x
+    react-dom: 15.x || 16.x || 17.x
+  checksum: 8ebf4f9cdc956219b4737bdb75b52703deb1dceb091b6dc4337d36e39e0c0adca3f03585392efa66f27d871c2b232f6117edc380f21e9600717e2a8ba3760102
+  languageName: node
+  linkType: hard
+
 "qs@npm:~6.5.2":
   version: 6.5.2
   resolution: "qs@npm:6.5.2"
@@ -5147,6 +5196,19 @@ fsevents@~2.3.1:
   bin:
     rc: ./cli.js
   checksum: ea2b7f7cee201a67923a2240de594a5d9b59bd312b814b06536d3d609a416dfd6fb9b85ea2abfd3b8a4eb5ed33eaff946ee75a8f2b7fb10941073c5cfee6b7a5
+  languageName: node
+  linkType: hard
+
+"react-animate-height@npm:^2.0.23":
+  version: 2.0.23
+  resolution: "react-animate-height@npm:2.0.23"
+  dependencies:
+    classnames: ^2.2.5
+    prop-types: ^15.6.1
+  peerDependencies:
+    react: ">=15.6.2"
+    react-dom: ">=15.6.2"
+  checksum: 2f9741dc27f508e40ea59e3e15231b2fd8db183d42110f01564b67a81bc571caf89f25b5fa755e3deeb0e918dcbe6055840488bef7117ae54bdb77d1d61fedb7
   languageName: node
   linkType: hard
 
@@ -5264,7 +5326,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"react-transition-group@npm:^4.4.0":
+"react-transition-group@npm:^4.4.0, react-transition-group@npm:^4.4.1":
   version: 4.4.1
   resolution: "react-transition-group@npm:4.4.1"
   dependencies:

@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     dispay: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
+    zIndex: 100,
   },
   logo: {
     width: 120,
